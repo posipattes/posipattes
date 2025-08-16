@@ -3,67 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Posi'pattes</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f8f9fa;
-            color: #222;
-        }
-        header, footer {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        main {
-            padding: 40px 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            min-height: 400px;
-        }
-        .image-placeholder {
-            width: 100%;
-            height: 200px;
-            background: #ddd;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #888;
-            font-size: 1.2em;
-            margin: 24px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
 
     <header>
-        <h1>Bienvenue sur Posi'pattes</h1>
+        <h1 class="header-title">Bienvenue sur Posi'pattes</h1>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#prestations">Prestations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <h2>Titre principal</h2>
-        <p>
-            Ceci est un espace réservé pour le texte principal de votre page. Ajoutez ici votre contenu, des informations, ou toute autre donnée pertinente.
-        </p>
+        <section id="accueil">          
+            <p>
+                L'éducation canine en méthode positive est une approche qui privilégie le respect des émotions et du bien-être du chien. 
+                Contrairement aux méthodes traditionnelles basées sur la punition, cette approche se concentre sur le renforcement positif, 
+                c'est-à-dire la récompense des comportements souhaités par le biais de friandises, de caresses ou de jeux.
+            </p>
+            <p>
+                L'objectif est de créer un lien de confiance entre le maître et son chien en encourageant l'animal à apprendre dans un 
+                environnement sécurisant et bienveillant. Cela permet non seulement de développer des comportements positifs, 
+                mais aussi de renforcer l'équilibre émotionnel du chien.
+            </p>
+            <div class="image-placeholder">
+                <img src="images/labrador_noir.jpg" alt="Chien heureux" />
+            </div>
+        </section>
 
-        <div class="image-placeholder">
-            <img src="images/labrador_noir.png" />
-        </div>
+        <section id="prestations">
+            <p>
+                Nos services incluent la promenade de chiens, la garde à domicile, et bien plus encore. Découvrez toutes nos prestations adaptées à vos besoins.
+            </p>
+            <div class="image-placeholder">
+                Services proposés
+            </div>
+        </section>
 
-        <h3>Sous-titre</h3>
-        <p>
-            Encore un peu de texte pour montrer à quoi ressemble une section supplémentaire. Vous pouvez remplacer ce texte par ce que vous souhaitez.
-        </p>
-
-        <div class="image-placeholder">
-            Autre Image Placeholder
-        </div>
+        <section id="contact">
+            <p>
+                Vous souhaitez nous contacter ? Retrouvez toutes nos informations de contact ci-dessous pour prendre rendez-vous ou poser vos questions.
+            </p>
+            <div class="image-placeholder">
+                Informations de contact
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>Pied de page &copy; 2025</p>
+        <p>Posi'pattes &copy; 2025</p>
     </footer>
 
 </body>
