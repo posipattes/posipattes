@@ -7,7 +7,16 @@ body {
     color: #222;
 }
 
-header, footer {
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+footer {
     background: #333;
     color: #fff;
     padding: 20px 0;
@@ -27,6 +36,8 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+    height: 40px;
+    box-sizing: border-box;
 }
 
 nav ul {
@@ -55,6 +66,23 @@ main {
     margin: 0 auto;
     background: #a4dea4;
     min-height: 400px;
+    position: relative;
+}
+
+.side-image {
+    position: fixed;
+    top: 100px; /* 60px (header) + 40px (nav) */
+    height: calc(100vh - 100px);
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.side-image.left {
+    left: 0;
+}
+
+.side-image.right {
+    right: 0;
 }
 
 section {
@@ -134,4 +162,25 @@ section h2 {
     position: absolute;
     left: -1.5rem;
     color: #98FB98;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4267B2;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.social-link i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.social-link:hover {
+    background-color: #365899;
+    transform: scale(1.05);
 }
